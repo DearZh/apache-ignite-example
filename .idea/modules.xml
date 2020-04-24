@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/apache-ignite.iml" filepath="$PROJECT_DIR$/apache-ignite-2.7.6-src/apache-ignite.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/apache-ignite-example.iml" filepath="$PROJECT_DIR$/.idea/apache-ignite-example.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/aop/ignite-aop.iml" filepath="$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/aop/ignite-aop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/apache-license-gen/ignite-apache-license-gen.iml" filepath="$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/apache-license-gen/ignite-apache-license-gen.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/web/ignite-appserver-test/ignite-appserver-test.iml" filepath="$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/web/ignite-appserver-test/ignite-appserver-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/aws/ignite-aws.iml" filepath="$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/aws/ignite-aws.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/camel/ignite-camel.iml" filepath="$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/camel/ignite-camel.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/cassandra/ignite-cassandra.iml" filepath="$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/cassandra/ignite-cassandra.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/cassandra/serializers/ignite-cassandra-serializers.iml" filepath="$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/cassandra/serializers/ignite-cassandra-serializers.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/cassandra/store/ignite-cassandra-store.iml" filepath="$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/cassandra/store/ignite-cassandra-store.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/clients/ignite-clients.iml" filepath="$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/clients/ignite-clients.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/cloud/ignite-cloud.iml" filepath="$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/cloud/ignite-cloud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/codegen/ignite-codegen.iml" filepath="$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/codegen/ignite-codegen.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/core/ignite-core.iml" filepath="$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/core/ignite-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/dev-utils/ignite-dev-utils.iml" filepath="$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/dev-utils/ignite-dev-utils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/direct-io/ignite-direct-io.iml" filepath="$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/direct-io/ignite-direct-io.iml" />
+      <module fileurl="file://$PROJECT_DIR$/examples/ignite-examples.iml" filepath="$PROJECT_DIR$/examples/ignite-examples.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/extdata/p2p/ignite-extdata-p2p.iml" filepath="$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/extdata/p2p/ignite-extdata-p2p.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/extdata/platform/ignite-extdata-platform.iml" filepath="$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/extdata/platform/ignite-extdata-platform.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/extdata/uri/ignite-extdata-uri.iml" filepath="$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/extdata/uri/ignite-extdata-uri.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/extdata/uri/modules/uri-dependency/ignite-extdata-uri-dep.iml" filepath="$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/extdata/uri/modules/uri-dependency/ignite-extdata-uri-dep.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/flink/ignite-flink.iml" filepath="$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/flink/ignite-flink.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/flume/ignite-flume.iml" filepath="$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/flume/ignite-flume.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/gce/ignite-gce.iml" filepath="$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/gce/ignite-gce.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/hadoop/ignite-hadoop.iml" filepath="$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/hadoop/ignite-hadoop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/hibernate-core/ignite-hibernate-core.iml" filepath="$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/hibernate-core/ignite-hibernate-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/indexing/ignite-indexing.iml" filepath="$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/indexing/ignite-indexing.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/jcl/ignite-jcl.iml" filepath="$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/jcl/ignite-jcl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/jms11/ignite-jms11.iml" filepath="$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/jms11/ignite-jms11.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/jta/ignite-jta.iml" filepath="$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/jta/ignite-jta.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/kafka/ignite-kafka.iml" filepath="$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/kafka/ignite-kafka.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/kubernetes/ignite-kubernetes.iml" filepath="$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/kubernetes/ignite-kubernetes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/log4j/ignite-log4j.iml" filepath="$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/log4j/ignite-log4j.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/log4j2/ignite-log4j2.iml" filepath="$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/log4j2/ignite-log4j2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/mesos/ignite-mesos.iml" filepath="$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/mesos/ignite-mesos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/ml/ignite-ml.iml" filepath="$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/ml/ignite-ml.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/mqtt/ignite-mqtt.iml" filepath="$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/mqtt/ignite-mqtt.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/osgi/ignite-osgi.iml" filepath="$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/osgi/ignite-osgi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/osgi-karaf/ignite-osgi-karaf.iml" filepath="$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/osgi-karaf/ignite-osgi-karaf.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/osgi-paxlogging/ignite-osgi-paxlogging.iml" filepath="$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/osgi-paxlogging/ignite-osgi-paxlogging.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/rest-http/ignite-rest-http.iml" filepath="$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/rest-http/ignite-rest-http.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/rocketmq/ignite-rocketmq.iml" filepath="$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/rocketmq/ignite-rocketmq.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/scalar/ignite-scalar.iml" filepath="$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/scalar/ignite-scalar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/slf4j/ignite-slf4j.iml" filepath="$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/slf4j/ignite-slf4j.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/spark/ignite-spark.iml" filepath="$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/spark/ignite-spark.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/spring/ignite-spring.iml" filepath="$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/spring/ignite-spring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/spring-data/ignite-spring-data.iml" filepath="$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/spring-data/ignite-spring-data.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/spring-data-2.0/ignite-spring-data_2.0.iml" filepath="$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/spring-data-2.0/ignite-spring-data_2.0.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/sqlline/ignite-sqlline.iml" filepath="$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/sqlline/ignite-sqlline.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/ssh/ignite-ssh.iml" filepath="$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/ssh/ignite-ssh.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/storm/ignite-storm.iml" filepath="$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/storm/ignite-storm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/tensorflow/ignite-tensorflow.iml" filepath="$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/tensorflow/ignite-tensorflow.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/tools/ignite-tools.iml" filepath="$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/tools/ignite-tools.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/twitter/ignite-twitter.iml" filepath="$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/twitter/ignite-twitter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/urideploy/ignite-urideploy.iml" filepath="$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/urideploy/ignite-urideploy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/visor-console/ignite-visor-console.iml" filepath="$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/visor-console/ignite-visor-console.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/visor-plugins/ignite-visor-plugins.iml" filepath="$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/visor-plugins/ignite-visor-plugins.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/web/ignite-web.iml" filepath="$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/web/ignite-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/web/ignite-websphere-test/ignite-websphere-test.iml" filepath="$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/web/ignite-websphere-test/ignite-websphere-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/yarn/ignite-yarn.iml" filepath="$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/yarn/ignite-yarn.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/zeromq/ignite-zeromq.iml" filepath="$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/zeromq/ignite-zeromq.iml" />
+      <module fileurl="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/zookeeper/ignite-zookeeper.iml" filepath="$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/zookeeper/ignite-zookeeper.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" addBOMForNewFiles="with NO BOM">
+    <file url="file://$PROJECT_DIR$/apache-ignite-2.7.6-src" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/aop" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/apache-license-gen" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/aws" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/camel" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/cassandra" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/cassandra/serializers" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/cassandra/store" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/clients" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/cloud" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/codegen" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/core" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/dev-utils" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/direct-io" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/extdata/p2p" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/extdata/platform" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/extdata/uri" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/extdata/uri/modules/uri-dependency" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/flink" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/flume" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/gce" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/hadoop" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/hibernate-core" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/indexing" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/jcl" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/jms11" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/jta" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/kafka" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/kubernetes" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/log4j" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/log4j2" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/mesos" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/ml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/mqtt" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/osgi" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/osgi-karaf" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/osgi-paxlogging" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/rest-http" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/rocketmq" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/scalar" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/slf4j" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/spark" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/spring" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/spring-data" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/spring-data-2.0" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/sqlline" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/ssh" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/storm" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/tensorflow" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/tools" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/twitter" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/urideploy" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/visor-console" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/visor-plugins" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/web/ignite-appserver-test" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/web/ignite-websphere-test" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/yarn" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/zeromq" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/zookeeper" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/examples" charset="UTF-8" />
+  </component>
+</project>

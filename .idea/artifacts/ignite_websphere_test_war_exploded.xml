@@ -1,0 +1,68 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="ignite-websphere-test:war exploded">
+    <output-path>$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/web/ignite-websphere-test/target/ignite-websphere-test</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>true</exploded>
+        <module>ignite-websphere-test</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="ignite-websphere-test" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="archive" name="ignite-appserver-test-2.7.6.jar">
+            <element id="module-output" name="ignite-appserver-test" />
+          </element>
+          <element id="archive" name="ignite-core-2.7.6.jar">
+            <element id="module-output" name="ignite-core" />
+          </element>
+          <element id="library" level="project" name="Maven: javax.cache:cache-api:1.0.0" />
+          <element id="library" level="project" name="Maven: org.jetbrains:annotations:13.0" />
+          <element id="library" level="project" name="Maven: org.gridgain:ignite-shmem:1.0.0" />
+          <element id="archive" name="ignite-web-2.7.6.jar">
+            <element id="module-output" name="ignite-web" />
+          </element>
+          <element id="library" level="project" name="Maven: org.apache.tomcat:tomcat-servlet-api:9.0.10" />
+          <element id="archive" name="ignite-log4j-2.7.6.jar">
+            <element id="module-output" name="ignite-log4j" />
+          </element>
+          <element id="library" level="project" name="Maven: log4j:log4j:1.2.17" />
+          <element id="archive" name="ignite-spring-2.7.6.jar">
+            <element id="module-output" name="ignite-spring" />
+          </element>
+          <element id="archive" name="ignite-indexing-2.7.6.jar">
+            <element id="module-output" name="ignite-indexing" />
+          </element>
+          <element id="library" level="project" name="Maven: commons-codec:commons-codec:1.11" />
+          <element id="library" level="project" name="Maven: org.apache.lucene:lucene-core:7.4.0" />
+          <element id="library" level="project" name="Maven: org.apache.lucene:lucene-analyzers-common:7.4.0" />
+          <element id="library" level="project" name="Maven: org.apache.lucene:lucene-queryparser:7.4.0" />
+          <element id="library" level="project" name="Maven: org.apache.lucene:lucene-queries:7.4.0" />
+          <element id="library" level="project" name="Maven: org.apache.lucene:lucene-sandbox:7.4.0" />
+          <element id="library" level="project" name="Maven: com.h2database:h2:1.4.197" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-core:4.3.18.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-aop:4.3.18.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-beans:4.3.18.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-context:4.3.18.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-expression:4.3.18.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-tx:4.3.18.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-jdbc:4.3.18.RELEASE" />
+          <element id="library" level="project" name="Maven: commons-logging:commons-logging:1.1.1" />
+          <element id="archive" name="ignite-jta-2.7.6.jar">
+            <element id="module-output" name="ignite-jta" />
+          </element>
+          <element id="library" level="project" name="Maven: javax.transaction:jta:1.1" />
+          <element id="library" level="project" name="Maven: com.ibm.websphere.appserver.api:com.ibm.websphere.appserver.api.transaction:1.1.10" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/web/ignite-websphere-test/target/ignite-websphere-test/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="ignite-websphere-test/web/Web" />
+    </root>
+  </artifact>
+</component>

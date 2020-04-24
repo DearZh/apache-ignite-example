@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="ignite-websphere-test:war">
+    <output-path>$PROJECT_DIR$/apache-ignite-2.7.6-src/modules/web/ignite-websphere-test/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>ignite-websphere-test</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="ignite-websphere-test.war">
+      <element id="artifact" artifact-name="ignite-websphere-test:war exploded" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="ignite-aop" />
+        <module name="ignite-apache-license-gen" />
+        <module name="ignite-appserver-test" />
+        <module name="ignite-aws" />
+        <module name="ignite-camel" />
+        <module name="ignite-cassandra-serializers" />
+        <module name="ignite-cassandra-store" />
+        <module name="ignite-clients" />
+        <module name="ignite-cloud" />
+        <module name="ignite-codegen" />
+        <module name="ignite-core" />
+        <module name="ignite-dev-utils" />
+        <module name="ignite-direct-io" />
+        <module name="ignite-examples" />
+        <module name="ignite-extdata-p2p" />
+        <module name="ignite-extdata-platform" />
+        <module name="ignite-extdata-uri-dep" />
+        <module name="ignite-flink" />
+        <module name="ignite-flume" />
+        <module name="ignite-gce" />
+        <module name="ignite-hadoop" />
+        <module name="ignite-hibernate-core" />
+        <module name="ignite-indexing" />
+        <module name="ignite-jcl" />
+        <module name="ignite-jms11" />
+        <module name="ignite-jta" />
+        <module name="ignite-kafka" />
+        <module name="ignite-kubernetes" />
+        <module name="ignite-log4j" />
+        <module name="ignite-log4j2" />
+        <module name="ignite-mesos" />
+        <module name="ignite-ml" />
+        <module name="ignite-mqtt" />
+        <module name="ignite-osgi" />
+        <module name="ignite-osgi-paxlogging" />
+        <module name="ignite-rest-http" />
+        <module name="ignite-rocketmq" />
+        <module name="ignite-scalar" />
+        <module name="ignite-slf4j" />
+        <module name="ignite-spark" />
+        <module name="ignite-spring" />
+        <module name="ignite-spring-data" />
+        <module name="ignite-spring-data_2.0" />
+        <module name="ignite-sqlline" />
+        <module name="ignite-ssh" />
+        <module name="ignite-storm" />
+        <module name="ignite-tensorflow" />
+        <module name="ignite-tools" />
+        <module name="ignite-twitter" />
+        <module name="ignite-urideploy" />
+        <module name="ignite-visor-console" />
+        <module name="ignite-visor-plugins" />
+        <module name="ignite-web" />
+        <module name="ignite-websphere-test" />
+        <module name="ignite-yarn" />
+        <module name="ignite-zeromq" />
+        <module name="ignite-zookeeper" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="apache-ignite" target="1.8" />
+      <module name="ignite-aop" target="1.8" />
+      <module name="ignite-apache-license-gen" target="1.5" />
+      <module name="ignite-appserver-test" target="1.8" />
+      <module name="ignite-aws" target="1.8" />
+      <module name="ignite-camel" target="1.8" />
+      <module name="ignite-cassandra" target="1.8" />
+      <module name="ignite-cassandra-serializers" target="1.8" />
+      <module name="ignite-cassandra-store" target="1.8" />
+      <module name="ignite-clients" target="1.8" />
+      <module name="ignite-cloud" target="1.8" />
+      <module name="ignite-codegen" target="1.8" />
+      <module name="ignite-core" target="1.8" />
+      <module name="ignite-dev-utils" target="1.8" />
+      <module name="ignite-direct-io" target="1.8" />
+      <module name="ignite-examples" target="1.8" />
+      <module name="ignite-extdata-p2p" target="1.8" />
+      <module name="ignite-extdata-platform" target="1.8" />
+      <module name="ignite-extdata-uri" target="1.8" />
+      <module name="ignite-extdata-uri-dep" target="1.8" />
+      <module name="ignite-flink" target="1.8" />
+      <module name="ignite-flume" target="1.8" />
+      <module name="ignite-gce" target="1.8" />
+      <module name="ignite-hadoop" target="1.8" />
+      <module name="ignite-hibernate-core" target="1.8" />
+      <module name="ignite-indexing" target="1.8" />
+      <module name="ignite-jcl" target="1.8" />
+      <module name="ignite-jms11" target="1.8" />
+      <module name="ignite-jta" target="1.8" />
+      <module name="ignite-kafka" target="1.8" />
+      <module name="ignite-kubernetes" target="1.8" />
+      <module name="ignite-log4j" target="1.8" />
+      <module name="ignite-log4j2" target="1.8" />
+      <module name="ignite-mesos" target="1.8" />
+      <module name="ignite-ml" target="1.8" />
+      <module name="ignite-mqtt" target="1.8" />
+      <module name="ignite-osgi" target="1.8" />
+      <module name="ignite-osgi-karaf" target="1.8" />
+      <module name="ignite-osgi-paxlogging" target="1.8" />
+      <module name="ignite-rest-http" target="1.8" />
+      <module name="ignite-rocketmq" target="1.8" />
+      <module name="ignite-scalar" target="1.8" />
+      <module name="ignite-slf4j" target="1.8" />
+      <module name="ignite-spark" target="1.8" />
+      <module name="ignite-spring" target="1.8" />
+      <module name="ignite-spring-data" target="1.8" />
+      <module name="ignite-spring-data_2.0" target="1.8" />
+      <module name="ignite-sqlline" target="1.8" />
+      <module name="ignite-ssh" target="1.8" />
+      <module name="ignite-storm" target="1.8" />
+      <module name="ignite-tensorflow" target="1.8" />
+      <module name="ignite-tools" target="1.8" />
+      <module name="ignite-twitter" target="1.8" />
+      <module name="ignite-urideploy" target="1.8" />
+      <module name="ignite-visor-console" target="1.8" />
+      <module name="ignite-visor-plugins" target="1.8" />
+      <module name="ignite-web" target="1.8" />
+      <module name="ignite-websphere-test" target="1.8" />
+      <module name="ignite-yarn" target="1.8" />
+      <module name="ignite-zeromq" target="1.8" />
+      <module name="ignite-zookeeper" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

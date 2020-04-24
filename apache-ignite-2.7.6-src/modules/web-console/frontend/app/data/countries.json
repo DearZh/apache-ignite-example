@@ -1,0 +1,122 @@
+[
+  {
+    "label": "United States",
+    "value": "United States",
+    "code": "USA"
+  },
+  {
+    "label": "Canada",
+    "value": "Canada",
+    "code": "CAN"
+  },
+  {
+    "label": "United Kingdom",
+    "value": "United Kingdom",
+    "code": "GBR"
+  },
+  {
+    "label": "Germany",
+    "value": "Germany",
+    "code": "DEU"
+  },
+  {
+    "label": "France",
+    "value": "France",
+    "code": "FRA"
+  },
+  {
+    "label": "Belgium",
+    "value": "Belgium",
+    "code": "BEL"
+  },
+  {
+    "label": "Switzerland",
+    "value": "Switzerland",
+    "code": "CHE"
+  },
+  {
+    "label": "Netherlands",
+    "value": "Netherlands",
+    "code": "NLD"
+  },
+  {
+    "label": "Israel",
+    "value": "Israel",
+    "code": "ISR"
+  },
+  {
+    "label": "Sweden",
+    "value": "Sweden",
+    "code": "SWE"
+  },
+  {
+    "label": "Russia",
+    "value": "Russia",
+    "code": "RUS"
+  },
+  {
+    "label": "Other Europe",
+    "value": "Other Europe",
+    "code": "Other Europe"
+  },
+  {
+    "label": "China",
+    "value": "China",
+    "code": "CHN"
+  },
+  {
+    "label": "India",
+    "value": "India",
+    "code": "IND"
+  },
+  {
+    "label": "Japan",
+    "value": "Japan",
+    "code": "JPN"
+  },
+  {
+    "label": "Other Asia",
+    "value": "Other Asia",
+    "code": "Other Asia"
+  },
+  {
+    "label": "Australia",
+    "value": "Australia",
+    "code": "AUS"
+  },
+  {
+    "label": "Brazil",
+    "value": "Brazil",
+    "code": "BRA"
+  },
+  {
+    "label": "Argentina",
+    "value": "Argentina",
+    "code": "ARG"
+  },
+  {
+    "label": "Other South America",
+    "value": "Other South America",
+    "code": "Other South America"
+  },
+  {
+    "label": "South Africa",
+    "value": "South Africa",
+    "code": "ZAF"
+  },
+  {
+    "label": "Nigeria",
+    "value": "Nigeria",
+    "code": "NGA"
+  },
+  {
+    "label": "Other Africa",
+    "value": "Other Africa",
+    "code": "Other Africa"
+  },
+  {
+    "label": "Rest of the World",
+    "value": "Rest of the World",
+    "code": "Rest of the World"
+  }
+]
