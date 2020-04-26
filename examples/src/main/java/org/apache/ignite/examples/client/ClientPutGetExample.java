@@ -33,8 +33,14 @@ import org.apache.ignite.client.ClientException;
  * </ul>
  * </p>
  */
+
+/**
+ * 演示如何将Ignite瘦客户端用于基本的放置/获取缓存操作。 * <p> *先决条件：* <ul> * <li> Ignite服务器节点必须在本地主机上运行。</ li> * </ ul> * </ p>
+ */
 public class ClientPutGetExample {
-    /** Entry point. */
+    /**
+     * Entry point.
+     */
     public static void main(String[] args) {
         ClientConfiguration cfg = new ClientConfiguration().setAddresses("127.0.0.1:10800");
 
@@ -58,11 +64,9 @@ public class ClientPutGetExample {
             Address cachedVal = cache.get(key);
 
             System.out.format(">>> Loaded [%s] from the cache.\n", cachedVal);
-        }
-        catch (ClientException e) {
+        } catch (ClientException e) {
             System.err.println(e.getMessage());
-        }
-        catch (Exception e) {
+        } catch (Exception e) {
             System.err.format("Unexpected failure: %s\n", e);
         }
     }
