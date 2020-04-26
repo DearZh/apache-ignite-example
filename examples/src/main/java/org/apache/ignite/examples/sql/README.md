@@ -20,15 +20,14 @@ Ignite 在已有的集群功能上扩展并支持完整的DDL和DML SQL语句，
 
 4、Queries的演示 SqlQueriesExample
 
-上述几个相关演示类的命名可能会引起相对应的误解：
 ```
 SqlDdlExample并不是完全演示了Sql DDL 的写法
 SqlDmlExample也并不是只演示了DML的写法；
 相反它们是交互进行的，Ddl类中包含了DML的内容，DML类中包含了ddl的内容。
 
 最大的不同是：
-**DDL类中演示了如何基于我们所熟知的SQL DDL的写法(create table)的方式进行表的创建；
-而 Dml类中则主要演示了如何通过Java Bean注解的方式是来进行表的创建；**
+DDL类中演示了如何基于我们所熟知的SQL DDL(create table)的方式进行表的创建；
+而 Dml类中则主要演示了如何通过Java Bean注解的方式是来进行表的创建；
 
 Test的时候注意一下即可；
 ```
