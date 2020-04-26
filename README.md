@@ -16,10 +16,10 @@ examples中的代码用例,直接引用的便是ignite包中的源代码，无�
 
 ![导入后结果](img/two.jpg)
 
-# [使用方式](examples/README.md)
+# [Demo示例](examples/README.md)
 
 项目全部导入完成后，便可直接打开examples/src/main/java/org/apache/ignite/examples目录，
-以下便为当前所有的测试用例;
+以下便为当前所有的Test实例;
 
 ![example/test](img/three.jpg)
 
