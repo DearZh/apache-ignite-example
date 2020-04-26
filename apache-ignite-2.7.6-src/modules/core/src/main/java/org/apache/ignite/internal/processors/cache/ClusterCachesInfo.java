@@ -78,6 +78,7 @@ import static org.apache.ignite.internal.GridComponent.DiscoveryDataExchangeType
 
 /**
  * Logic related to cache discovery data processing.
+ * 与缓存发现数据处理有关的逻辑。 Arnold.zhao 2020/4/26
  */
 class ClusterCachesInfo {
     /** Version since which merge of config is supports. */
@@ -86,7 +87,7 @@ class ClusterCachesInfo {
     /** */
     private final GridKernalContext ctx;
 
-    /** Dynamic caches. */
+    /** Dynamic caches. 动态缓存（1、存储缓存key名称） */
     private final ConcurrentMap<String, DynamicCacheDescriptor> registeredCaches = new ConcurrentHashMap<>();
 
     /** */

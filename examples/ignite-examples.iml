@@ -15,7 +15,6 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" name="Maven: org.springframework.data:spring-data-commons:2.0.13.RELEASE" level="project" />
     <orderEntry type="library" name="Maven: javax.cache:cache-api:1.0.0" level="project" />
     <orderEntry type="module" module-name="ignite-core" />
     <orderEntry type="library" name="Maven: org.jetbrains:annotations:13.0" level="project" />

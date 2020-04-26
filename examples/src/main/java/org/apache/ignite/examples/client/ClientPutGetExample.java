@@ -35,7 +35,8 @@ import org.apache.ignite.client.ClientException;
  */
 
 /**
- * 演示如何将Ignite瘦客户端用于基本的放置/获取缓存操作。 * <p> *先决条件：* <ul> * <li> Ignite服务器节点必须在本地主机上运行。</ li> * </ ul> * </ p>
+ * 演示如何将Ignite瘦客户端用于基本的放置/获取缓存操作。
+ * <p> *先决条件：* <ul> * <li> Ignite服务器节点必须在本地主机上运行。</ li> * </ ul> * </ p>
  */
 public class ClientPutGetExample {
     /**
@@ -44,6 +45,7 @@ public class ClientPutGetExample {
     public static void main(String[] args) {
         ClientConfiguration cfg = new ClientConfiguration().setAddresses("127.0.0.1:10800");
 
+        //Ignition.startClient 启动一个瘦客户端
         try (IgniteClient igniteClient = Ignition.startClient(cfg)) {
             System.out.println();
             System.out.println(">>> Thin client put-get example started.");

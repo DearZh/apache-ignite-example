@@ -17,6 +17,7 @@
 
 /**
  * <!-- Package description. -->
- * 展示了Ignite SQL API的用法。
+ * 演示了Ignite SQL API的用法。
+ * 当前文档演示可参考：https://www.ignite-service.cn/doc/sql/JavaDeveloperGuide.html#_1-sql-api
  */
 package org.apache.ignite.examples.sql;

@@ -26,16 +26,18 @@ import java.sql.Statement;
 import org.apache.ignite.examples.ExampleNodeStartup;
 
 /**
- * This example demonstrates usage of Ignite JDBC driver.
+ * 此示例演示了Ignite JDBC驱动程序的用法
  * <p>
  * Ignite nodes must be started in separate process using {@link ExampleNodeStartup} before running this example.
  */
 public class SqlJdbcExample {
+
+
     /**
-     * Executes example.
+     * 纯正的JDBC写法
      *
-     * @param args Command line arguments, none required.
-     * @throws Exception If example execution failed.
+     * @param args
+     * @throws Exception
      */
     public static void main(String[] args) throws Exception {
         print("JDBC example started.");

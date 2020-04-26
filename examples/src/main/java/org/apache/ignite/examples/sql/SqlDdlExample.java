@@ -17,47 +17,31 @@
 
 package org.apache.ignite.examples.sql;
 
-import java.util.List;
-
 import org.apache.ignite.Ignite;
 import org.apache.ignite.IgniteCache;
 import org.apache.ignite.Ignition;
 import org.apache.ignite.cache.query.SqlFieldsQuery;
 import org.apache.ignite.configuration.CacheConfiguration;
-import org.apache.ignite.examples.ExampleNodeStartup;
 
-/**
- * Example to showcase DDL capabilities of Ignite's SQL engine.
- * <p>
- * Remote nodes could be started from command line as follows:
- * {@code 'ignite.{sh|bat} examples/config/example-ignite.xml'}.
- * <p>
- * Alternatively you can run {@link ExampleNodeStartup} in either same or another JVM.
- */
+import java.util.List;
 
 /**
  * 展示Ignite SQL引擎的DDL功能的示例
  */
 public class SqlDdlExample {
     /**
-     * Dummy cache name. 虚拟缓存表名称   ** 错（类似于DB的 table_name）
+     * Dummy cache name. 虚拟缓存名称
      */
     private static final String DUMMY_CACHE_NAME = "DD_DD_dummy_cache";
 
-    /**
-     * Executes example.
-     *
-     * @param args Command line arguments, none required.
-     * @throws Exception If example execution failed.
-     */
+
     @SuppressWarnings({"unused", "ThrowFromFinallyBlock"})
     public static void main(String[] args) throws Exception {
+
         try (Ignite ignite = Ignition.start("examples/config/example-ignite.xml")) {
             print("Cache query DDL example started.");
 
-            System.out.println("ARNOLD______：ignite：" + ignite);
 
-            // Create dummy cache to act as an entry point for SQL queries (new SQL API which do not require this will appear in future versions, JDBC and ODBC drivers do not require it already).
             /**
              * 创建虚拟缓存以用作SQL查询的入口点（不需要此功能的新SQL API将在以后的版本中出现，JDBC和ODBC驱动程序已不需要它）
              * 此处定义sqlSchema为PUBLIC（对于Schema的概念在各个场景下都不尽相同，此处可理解为DB中的DB_NAME）；
@@ -68,18 +52,26 @@ public class SqlDdlExample {
              * 定义了当前的表名，以及当前表所对应的Schema名称以后，则创建该缓存块；
              */
             try (IgniteCache<?, ?> cache = ignite.getOrCreateCache(cacheCfg)) {
-                // Create reference City table based on REPLICATED template.
+
+                /**
+                 * 关于Ignite中DDL的语法可参考：
+                 * https://www.ignite-service.cn/doc/sql/SQLReference.html#_2-3-create-table
+                 */
+
+
+                //根据REPLICATED模板创建参考城市表。（template=replicated）
                 cache.query(new SqlFieldsQuery(
                         "CREATE TABLE city (id LONG PRIMARY KEY, name VARCHAR) WITH \"template=replicated\"")).getAll();
 
-                // Create table based on PARTITIONED template with one backup.
+                //基于具有一个备份的PARTITIONED模板创建表。（不指定with的情况下，默认模板为PARTITIONED）
                 cache.query(new SqlFieldsQuery(
                         "CREATE TABLE person (id LONG, name VARCHAR, city_id LONG, PRIMARY KEY (id, city_id)) " +
                                 "WITH \"backups=1, affinity_key=city_id\"")).getAll();
 
-                // Create an index.
+                // 创建索引
                 cache.query(new SqlFieldsQuery("CREATE INDEX on Person (city_id)")).getAll();
 
+                //数据插入
                 print("Created database objects.");
 
                 SqlFieldsQuery qry = new SqlFieldsQuery("INSERT INTO city (id, name) VALUES (?, ?)");
@@ -96,7 +88,10 @@ public class SqlDdlExample {
                 cache.query(qry.setArgs(4L, "Richard Miles", 2L)).getAll();
 
                 print("Populated data.");
+                //数据插入完毕
 
+
+                //数据查询
                 List<List<?>> res = cache.query(new SqlFieldsQuery(
                         "SELECT p.name, c.name FROM Person p INNER JOIN City c on c.id = p.city_id")).getAll();
 
@@ -105,12 +100,13 @@ public class SqlDdlExample {
                 for (Object next : res)
                     System.out.println(">>>    " + next);
 
-
+/*
                 System.out.println("ARNOLD______：ignite：" + ignite);
+
                 String sql = "select * from city";
                 List<List<?>> listA = ignite.getOrCreateCache(DUMMY_CACHE_NAME).query(new SqlFieldsQuery(sql)).getAll();
                 System.out.println("##----------------------：" + listA);
-
+*/
 
                 cache.query(new SqlFieldsQuery("drop table Person")).getAll();
                 cache.query(new SqlFieldsQuery("drop table City")).getAll();
