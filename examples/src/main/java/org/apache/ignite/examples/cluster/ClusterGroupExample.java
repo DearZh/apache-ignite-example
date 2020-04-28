@@ -36,7 +36,15 @@ import org.apache.ignite.lang.IgnitePredicate;
  * Alternatively you can run {@link ExampleNodeStartup} in another JVM which will start node
  * with {@code examples/config/example-ignite.xml} configuration.
  */
+
+/**
+ * 演示新的功能API。 * <p> *远程节点应始终以特殊的配置文件启动，该文件可启用P2P类加载：
+ * {@code'ignite。{sh | bat} examples / config / example-ignite.xml'}。 * <p>
+ * 或者，您可以在另一个JVM中运行{@link ExampleNodeStartup}，
+ * 该JVM将使用{@code examples / config / example-ignite.xml}配置启动节点*。
+ */
 public class ClusterGroupExample {
+
     /**
      * Executes example.
      *

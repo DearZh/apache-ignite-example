@@ -32,7 +32,14 @@ DDL类中演示了如何基于我们所熟知的SQL DDL(create table)的方式�
 Test的时候注意一下即可；
 ```
 
-Ignite中关于DML的写法是全部相同的，并没有特殊的API及写法，只是针对DDL扩展出了不同的API；
+Ignite中并不只是针对DDL扩展出了不同的API；
+
+针对SQL 的DML写法，在Ignite中也有相关的API查询方式：比如通过“键值API的方式”以及 “SqlQueries的方式”
+
+[键值API查询方式文档地址](https://www.ignite-service.cn/doc/sql/SqlKeyValue.html#_1-sql%E5%92%8C%E9%94%AE-%E5%80%BCapi%E7%9A%84%E4%BD%BF%E7%94%A8)
+
+[SqlQueries文档地址](https://www.ignite-service.cn/doc/sql/JavaDeveloperGuide.html#_2-5-%E7%A9%BA%E9%97%B4%E6%9F%A5%E8%AF%A2)
+
 
 
 ## 注意事项

@@ -19,6 +19,7 @@ package org.apache.ignite.examples.sql;
 
 import java.util.List;
 import javax.cache.Cache;
+
 import org.apache.ignite.Ignite;
 import org.apache.ignite.IgniteCache;
 import org.apache.ignite.Ignition;
@@ -44,33 +45,54 @@ import org.apache.ignite.lang.IgniteBiPredicate;
  * across several nodes, they may not work as expected. Keep in mind following
  * limitations (not applied if data is queried from one node only):
  * <ul>
- *     <li>
- *         Non-distributed joins will work correctly only if joined objects are stored in
- *         collocated mode. Refer to {@link AffinityKey} javadoc for more details.
- *         <p>
- *         To use distributed joins it is necessary to set query 'distributedJoin' flag using
- *         {@link SqlFieldsQuery#setDistributedJoins(boolean)} or {@link SqlQuery#setDistributedJoins(boolean)}.
- *     </li>
- *     <li>
- *         Note that if you created query on to replicated cache, all data will
- *         be queried only on one node, not depending on what caches participate in
- *         the query (some data from partitioned cache can be lost). And visa versa,
- *         if you created it on partitioned cache, data from replicated caches
- *         will be duplicated.
- *     </li>
+ * <li>
+ * Non-distributed joins will work correctly only if joined objects are stored in
+ * collocated mode. Refer to {@link AffinityKey} javadoc for more details.
+ * <p>
+ * To use distributed joins it is necessary to set query 'distributedJoin' flag using
+ * {@link SqlFieldsQuery#setDistributedJoins(boolean)} or {@link SqlQuery#setDistributedJoins(boolean)}.
+ * </li>
+ * <li>
+ * Note that if you created query on to replicated cache, all data will
+ * be queried only on one node, not depending on what caches participate in
+ * the query (some data from partitioned cache can be lost). And visa versa,
+ * if you created it on partitioned cache, data from replicated caches
+ * will be duplicated.
+ * </li>
  * </ul>
  * <p>
  * Remote nodes should be started using {@link ExampleNodeStartup} which will
  * start node with {@code examples/config/example-ignite.xml} configuration.
  */
+
+/**
+ * 使用Java SQL API的SQL查询示例。 * <p> *示例还演示了仅返回必需*字段而不是整个键/值对的字段查询的用法。
+ * 当字段查询分布在多个节点上时，它们可能无法按预期工作。
+ * 请记住以下限制（如果仅从一个节点查询数据，则不适用）：* <ul> * <li>
+ * *仅当联接对象以并置模式存储时，非分布式联接才能正常工作。
+ * 有关更多详细信息，请参见{@link AffinityKey} Javadoc。 * <p>
+ * *要使用分布式联接，必须使用* {@link SqlFieldsQuery＃setDistributedJoins（boolean）}
+ * 或{@link SqlQuery＃setDistributedJoins（boolean）}来设置查询'distributedJoin'标志。 * </ li> * <li>
+ * *请注意，如果您在复制的缓存上创建查询，则所有数据将*仅在一个节点上查询，
+ * 而不取决于查询所参与的缓存*（分区缓存中的某些数据可以丢失）。反之亦然，*
+ * 如果您在分区缓存中创建它，那么来自复制缓存的数据将被复制。 * </ li> * </ ul> * <p>
+ * *应当使用{@link ExampleNodeStartup}启动远程节点，
+ * 这将以{@code examples / config / example-ignite.xml}配置启动节点。
+ */
 public class SqlQueriesExample {
-    /** Organizations cache name. */
+    /**
+     * Organizations cache name.
+     */
     private static final String ORG_CACHE = SqlQueriesExample.class.getSimpleName() + "Organizations";
 
-    /** Persons collocated with Organizations cache name. */
+    /**
+     * Persons collocated with Organizations cache name.
+     */
     private static final String COLLOCATED_PERSON_CACHE = SqlQueriesExample.class.getSimpleName() + "CollocatedPersons";
 
-    /** Persons cache name. */
+    /**
+     * Persons cache name.
+     */
     private static final String PERSON_CACHE = SqlQueriesExample.class.getSimpleName() + "Persons";
 
     /**
@@ -90,7 +112,7 @@ public class SqlQueriesExample {
             orgCacheCfg.setIndexedTypes(Long.class, Organization.class);
 
             CacheConfiguration<AffinityKey<Long>, Person> colPersonCacheCfg =
-                new CacheConfiguration<>(COLLOCATED_PERSON_CACHE);
+                    new CacheConfiguration<>(COLLOCATED_PERSON_CACHE);
 
             colPersonCacheCfg.setCacheMode(CacheMode.PARTITIONED); // Default.
             colPersonCacheCfg.setIndexedTypes(AffinityKey.class, Person.class);
@@ -130,8 +152,7 @@ public class SqlQueriesExample {
 
                 // Example for SQL-based fields queries that uses joins.
                 sqlFieldsQueryWithJoin();
-            }
-            finally {
+            } finally {
                 // Distributed cache could be removed from cluster only by Ignite.destroyCache() call.
                 ignite.destroyCache(COLLOCATED_PERSON_CACHE);
                 ignite.destroyCache(PERSON_CACHE);
@@ -148,17 +169,17 @@ public class SqlQueriesExample {
     private static void sqlQuery() {
         IgniteCache<Long, Person> cache = Ignition.ignite().cache(PERSON_CACHE);
 
-        // SQL clause which selects salaries based on range.
+        // SQL clause which selects salaries based on range. 根据范围选择薪水
         String sql = "salary > ? and salary <= ?";
 
         // Execute queries for salary ranges.
         print("People with salaries between 0 and 1000 (queried with SQL query): ",
-            cache.query(new SqlQuery<AffinityKey<Long>, Person>(Person.class, sql).
-                setArgs(0, 1000)).getAll());
+                cache.query(new SqlQuery<AffinityKey<Long>, Person>(Person.class, sql).
+                        setArgs(0, 1000)).getAll());
 
         print("People with salaries between 1000 and 2000 (queried with SQL query): ",
-            cache.query(new SqlQuery<AffinityKey<Long>, Person>(Person.class, sql).
-                setArgs(1000, 2000)).getAll());
+                cache.query(new SqlQuery<AffinityKey<Long>, Person>(Person.class, sql).
+                        setArgs(1000, 2000)).getAll());
     }
 
     /**
@@ -169,18 +190,18 @@ public class SqlQueriesExample {
 
         // SQL clause query which joins on 2 types to select people for a specific organization.
         String joinSql =
-            "from Person, \"" + ORG_CACHE + "\".Organization as org " +
-            "where Person.orgId = org.id " +
-            "and lower(org.name) = lower(?)";
+                "from Person, \"" + ORG_CACHE + "\".Organization as org " +
+                        "where Person.orgId = org.id " +
+                        "and lower(org.name) = lower(?)";
 
         // Execute queries for find employees for different organizations.
         print("Following people are 'ApacheIgnite' employees: ",
-            cache.query(new SqlQuery<AffinityKey<Long>, Person>(Person.class, joinSql).
-                setArgs("ApacheIgnite")).getAll());
+                cache.query(new SqlQuery<AffinityKey<Long>, Person>(Person.class, joinSql).
+                        setArgs("ApacheIgnite")).getAll());
 
         print("Following people are 'Other' employees: ",
-            cache.query(new SqlQuery<AffinityKey<Long>, Person>(Person.class, joinSql).
-                setArgs("Other")).getAll());
+                cache.query(new SqlQuery<AffinityKey<Long>, Person>(Person.class, joinSql).
+                        setArgs("Other")).getAll());
     }
 
     /**
@@ -192,12 +213,12 @@ public class SqlQueriesExample {
 
         // SQL clause query which joins on 2 types to select people for a specific organization.
         String joinSql =
-            "from Person, \"" + ORG_CACHE + "\".Organization as org " +
-            "where Person.orgId = org.id " +
-            "and lower(org.name) = lower(?)";
+                "from Person, \"" + ORG_CACHE + "\".Organization as org " +
+                        "where Person.orgId = org.id " +
+                        "and lower(org.name) = lower(?)";
 
         SqlQuery qry = new SqlQuery<Long, Person>(Person.class, joinSql).
-            setArgs("ApacheIgnite");
+                setArgs("ApacheIgnite");
 
         // Enable distributed joins for query.
         qry.setDistributedJoins(true);
@@ -219,10 +240,10 @@ public class SqlQueriesExample {
         // Calculate average of salary of all persons in ApacheIgnite.
         // Note that we also join on Organization cache as well.
         String sql =
-            "select avg(salary) " +
-            "from Person, \"" + ORG_CACHE + "\".Organization as org " +
-            "where Person.orgId = org.id " +
-            "and lower(org.name) = lower(?)";
+                "select avg(salary) " +
+                        "from Person, \"" + ORG_CACHE + "\".Organization as org " +
+                        "where Person.orgId = org.id " +
+                        "and lower(org.name) = lower(?)";
 
         QueryCursor<List<?>> cursor = cache.query(new SqlFieldsQuery(sql).setArgs("ApacheIgnite"));
 
@@ -239,7 +260,7 @@ public class SqlQueriesExample {
 
         // Execute query to get names of all employees.
         QueryCursor<List<?>> cursor = cache.query(new SqlFieldsQuery(
-            "select concat(firstName, ' ', lastName) from Person"));
+                "select concat(firstName, ' ', lastName) from Person"));
 
         // In this particular case each row will have one element with full name of an employees.
         List<List<?>> res = cursor.getAll();
@@ -257,9 +278,9 @@ public class SqlQueriesExample {
 
         // Execute query to get names of all employees.
         String sql =
-            "select concat(firstName, ' ', lastName), org.name " +
-            "from Person, \"" + ORG_CACHE + "\".Organization as org " +
-            "where Person.orgId = org.id";
+                "select concat(firstName, ' ', lastName), org.name " +
+                        "from Person, \"" + ORG_CACHE + "\".Organization as org " +
+                        "where Person.orgId = org.id";
 
         QueryCursor<List<?>> cursor = cache.query(new SqlFieldsQuery(sql));
 
@@ -271,12 +292,12 @@ public class SqlQueriesExample {
     }
 
     /**
-     * Populate cache with test data.
+     * Populate cache with test data. 用测试数据填充缓存
      */
     private static void initialize() {
         IgniteCache<Long, Organization> orgCache = Ignition.ignite().cache(ORG_CACHE);
 
-        // Clear cache before running the example.
+        // Clear cache before running the example. 在运行示例之前，先清除缓存。
         orgCache.clear();
 
         // Organizations.
@@ -289,7 +310,7 @@ public class SqlQueriesExample {
         IgniteCache<AffinityKey<Long>, Person> colPersonCache = Ignition.ignite().cache(COLLOCATED_PERSON_CACHE);
         IgniteCache<Long, Person> personCache = Ignition.ignite().cache(PERSON_CACHE);
 
-        // Clear caches before running the example.
+        // Clear caches before running the example. 在运行示例之前，先清除缓存。
         colPersonCache.clear();
         personCache.clear();
 
@@ -299,8 +320,8 @@ public class SqlQueriesExample {
         Person p3 = new Person(org2, "John", "Smith", 1000, "John Smith has Bachelor Degree.");
         Person p4 = new Person(org2, "Jane", "Smith", 2000, "Jane Smith has Master Degree.");
 
-        // Note that in this example we use custom affinity key for Person objects
-        // to ensure that all persons are collocated with their organizations.
+        // Note that in this example we use custom affinity key for Person objects //注意，在此示例中，我们对Person对象使用了自定义的相似性键
+        // to ensure that all persons are collocated with their organizations. //确保所有人与他们的组织在一起。
         colPersonCache.put(p1.key(), p1);
         colPersonCache.put(p2.key(), p2);
         colPersonCache.put(p3.key(), p3);
