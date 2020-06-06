@@ -35,7 +35,7 @@
         <!-- will be changed by profile activation. allows to combine profiles. -->
         <spark.folder>src/main/java</spark.folder>
         <lgpl.folder>src/main/java</lgpl.folder>
-        <ignite.version>2.7.6</ignite.version>
+        <ignite.version>2.8.1</ignite.version>
     </properties>
 
     <groupId>org.apache.ignite</groupId>
